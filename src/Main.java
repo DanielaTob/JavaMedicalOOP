@@ -1,18 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        Doctor myDoctor = new Doctor();
-        myDoctor.name = "Luke Skywalker";
-        myDoctor.speciality = "Psychology";
-        myDoctor.showName();
-        myDoctor.showSpeciality();
-        myDoctor.showId();
 
-        Doctor.id++;
+        //Nombre de la clase - punto - nombre del metodo
+        //Menu.showMenu();
 
-        Doctor myDoctorLuke = new Doctor();
-        myDoctor.showId();
+        Doctor myDoctor = new Doctor("Leia", "General");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
 
-        Menu.showMenu();
+        Patient patientIam = new Patient("luke", "luke2@gmail.com");
+        patientIam.setPhoneNumber("37656786");
+        System.out.println(patientIam.getPhoneNumber());
+        patientIam.setWeight(54.6);
+        System.out.println(patientIam.getWeight());
+
 
     }
 }
