@@ -18,11 +18,10 @@ public class Main {
 
 
         Patient patientIam = new Patient("luke", "luke2@gmail.com");
-        patientIam.setPhoneNumber("37656786");
+        patientIam.setPhoneNumber("39876543");
         System.out.println(patientIam.getPhoneNumber());
         patientIam.setWeight(54.6);
         System.out.println(patientIam.getWeight());
-
 
     }
 }

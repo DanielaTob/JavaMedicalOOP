@@ -1,20 +1,15 @@
-public class Patient {
-    private int id;
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
+public class Patient extends User{
+
+    //Atributos especiales
     private String birthday;
     private double weight;
     private double height;
     private String blood;
 
     Patient(String name, String email){
-        this.name = name;
-        this.email = email;
+        super(name, email);
         System.out.println("El nombre del paciente es: " + name + " y su email es: " + email);
     }
-
 
     //METODOS QUE SE ENCARGAN DE VALIDAR LOS PARAMETROS
 
@@ -36,18 +31,19 @@ public class Patient {
         this.height = height;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        if(phoneNumber.length() > 8){
-            System.out.println("El número de telefono debe contener maximo 8 digitos");
-        }else if (phoneNumber.length() < 8){
-        System.out.println("El numero de telefono debe contener minimo 8 digitos");
-        }
-        else if (phoneNumber.length() == 8) {
-            this.phoneNumber = phoneNumber;
-        }
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getBlood() {
+        return blood;
+    }
+
+    public void setBlood(String blood) {
+        this.blood = blood;
     }
 }
