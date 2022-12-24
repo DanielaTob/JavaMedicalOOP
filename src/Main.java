@@ -19,9 +19,13 @@ public class Main {
 
         Patient patientIam = new Patient("luke", "luke2@gmail.com");
         patientIam.setPhoneNumber("39876543");
-        System.out.println(patientIam.getPhoneNumber());
-        patientIam.setWeight(54.6);
-        System.out.println(patientIam.getWeight());
+        patientIam.setAddress("Calle 1 Avenida 3");
+        patientIam.setBirthday("35");
+        patientIam.setWeight(69.0);
+        patientIam.setHeight(1.70);
+        patientIam.setBlood("O+");
+
+        System.out.println(patientIam);
 
     }
 }
