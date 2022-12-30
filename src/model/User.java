@@ -1,3 +1,5 @@
+package model;
+
 public class User {
     private int id;
     private String name;
@@ -59,6 +61,6 @@ public class User {
     //Polimorfismo Sobre escritura de metodos con toString
     @Override
     public String toString() {
-        return "User: " + name + ", Email: "+ email + "\nAddress: " +address + ". Phone: " + phoneNumber;
+        return "model.User: " + name + ", Email: "+ email + "\nAddress: " +address + ". Phone: " + phoneNumber;
     }
 }

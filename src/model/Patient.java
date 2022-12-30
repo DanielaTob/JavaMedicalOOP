@@ -1,4 +1,6 @@
-public class Patient extends User{
+package model;
+
+public class Patient extends User {
 
     //Atributos especiales
     private String birthday;
@@ -6,7 +8,7 @@ public class Patient extends User{
     private double height;
     private String blood;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name, email);
         System.out.println("El nombre del paciente es: " + name + " y su email es: " + email);
     }
