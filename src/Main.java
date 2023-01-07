@@ -1,5 +1,7 @@
 import model.Doctor;
+import model.Nurse;
 import model.Patient;
+import model.User;
 
 import java.util.Date;
 
@@ -25,8 +27,29 @@ public class Main {
             System.out.println(aA.getDate() + " " + aA.getTime());
         }*/
 
+        User doctor = new Doctor("Anakin", "Ankin@gmail.com");
+        doctor.showDataUser();
 
-        Patient patientIam = new Patient("luke", "luke2@gmail.com");
+        User patient = new Patient("luke", "luke2@gmail.com");
+        patient.showDataUser();
+
+        User nurse = new Nurse("leia", "leia@gmail.com");
+        nurse.showDataUser();
+
+
+        //Clase y metodo anonimo
+        User user1 = new User("Leia", "Leia@gmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("\nNurse");
+                System.out.println("Hospital: Cruz Roja");
+                System.out.println("Departamento: Pediatria");
+            }
+        };
+        user1.showDataUser();
+
+
+        /*Patient patientIam = new Patient("luke", "luke2@gmail.com");
         patientIam.setPhoneNumber("39876543");
         patientIam.setAddress("Calle 1 Avenida 3");
         patientIam.setBirthday("35");
@@ -34,7 +57,7 @@ public class Main {
         patientIam.setHeight(1.70);
         patientIam.setBlood("O+");
 
-        System.out.println(patientIam);
+        System.out.println(patientIam);*/
 
     }
 }

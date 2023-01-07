@@ -15,4 +15,12 @@ public class Nurse extends User{
     public Nurse(String name, String email) {
         super(name, email);
     }
+
+
+    //Definir metodo abstracto
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Pediatria");
+    }
 }

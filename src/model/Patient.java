@@ -53,4 +53,12 @@ public class Patient extends User {
     public String toString() {
         return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood;
     }
+
+
+    //Definir metodo abstracto
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente del Hospital: Cruz Roja");
+        System.out.println("Departamento: Nutricion");
+    }
 }

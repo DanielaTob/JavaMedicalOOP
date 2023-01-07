@@ -40,6 +40,14 @@ public class Doctor extends User {
         return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
     }
 
+
+    //Definir metodo abstracto
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Oncologia");
+    }
+
     public static class AvailableAppointment{
         private int id;
         private Date date;
