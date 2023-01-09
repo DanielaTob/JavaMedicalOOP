@@ -1,3 +1,5 @@
+package ui;
+
 import model.Doctor;
 import model.Patient;
 

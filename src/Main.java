@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Nombre de la clase - punto - nombre del metodo
-        //Menu.showMenu();
+        //ui.Menu.showMenu();
 
         Doctor myDoctor = new Doctor("Luke", "luke@gmail.com");
         myDoctor.setSpeciality("General");
